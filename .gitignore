@@ -1,1 +1,11 @@
+# kicad thingys
+*.kicad_prl
+*.lck
+*.bck
 
+# kicad backups
+*-backups/
+
+# os temp files
+.DS_Store
+Thumbs.db
