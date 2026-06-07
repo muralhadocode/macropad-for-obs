@@ -5,7 +5,7 @@ Basically i joined hackclub because of the stickers and was too lazy to look int
 
 ## How it works
 The project consists of a custom PCB designed in KiCad, featuring 5 buttons (1 for changing scene, 1 for starting a stream, 1 for stopping a stream, 1 for starting a recording and one for stopping a recording) and 2 rotary encoders (1 for changing the volume of the microphone and one for changing the volume of the desktop) and an microcontroller Seeed Studio XIAO SAMD21.
-The Firmware consist in making key shortcuts for the start and stop stream and recording, and for the change scene, since obs has no shortcut for changing the volume you need to download the obs midi plugin so the encoders work, then you need to set it up:D.
+The Firmware consist in making key shortcuts for the start and stop stream and recording, and for the change scene, since obs has no shortcut for changing the volume you need to download the ([obs midi plugin](https://github.com/nhielost/obs-midi-mg/)) so the encoders work, then you need to set it up:D.
 
 ## Pictures
 <img width="487" height="583" alt="Captura de tela 2026-06-06 173129" src="https://github.com/user-attachments/assets/72cee8b5-140d-4c9e-84a1-e9cd907a23de" />
