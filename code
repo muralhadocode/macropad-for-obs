@@ -8,6 +8,9 @@ int psh3 = 6
 int psh4 = 7
 int psh5 = 8
 
+Encoder encmic(0, 1)
+Encoder enccomp(2, 3)
+
 long befposmic = 0
 long befposcomp = 0
 void setup() {
@@ -42,7 +45,7 @@ void loop() {
         delay(100)
         Keyboard.releaseAll()
         delay(300)
-    }
+        }
 //switch 3 that starts stream
     if (digitalRead(psh3) == LOW) {
         Keyboard.press(KEY_LEFT_CTRL)
