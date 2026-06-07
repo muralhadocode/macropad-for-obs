@@ -1,21 +1,28 @@
 #include <Arduino.h>
 #include <Keyboard.h>
 #include <Encoder.h>
+#include <MIDI.h>
 
-int psh1 = 4
-int psh2 = 5
-int psh3 = 6
-int psh4 = 7
-int psh5 = 8
+int psh1 = 4;
+int psh2 = 5;
+int psh3 = 6;
+int psh4 = 7;
+int psh5 = 8;
 
 Encoder encmic(0, 1)
 Encoder enccomp(2, 3)
 
 long befposmic = 0
 long befposcomp = 0
+
+int volmic = 64
+int volcomp = 64
+
+MIDI_CREATE_INSTANCE(HardwareSerial, Serial1, MIDI);
 void setup() {
     Serial.begin(9600);
     Keyboard.begin();
+    MIDI.begin(MIDI_CHANNEL_OMNI);
 
     pinMode(psh1, INPUT_PULLUP);
     pinMode(psh2, INPUT_PULLUP);
@@ -30,53 +37,73 @@ void loop() {
 //only the switches
 //switch 1 that starts recording    
     if (digitalRead(psh1) == LOW) {
-        Keyboard.press(KEY_LEFT_CTRL)
-        Keyboard.press(KEY_LEFT_SHIFT)
-        Keyboard.press(KEY_F1)
-        delay(100)
-        Keyboard.releaseAll()
-        delay(300)
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.press(KEY_LEFT_SHIFT);
+        Keyboard.press(KEY_F1);
+        delay(100);
+        Keyboard.releaseAll();
+        delay(300);
     }
 //switch 2 that stops recording
     if (digitalRead(psh2) == LOW) {
-        Keyboard.press(KEY_LEFT_CTRL)
-        Keyboard.press(KEY_LEFT_SHIFT)
-        Keyboard.press(KEY_F2)
-        delay(100)
-        Keyboard.releaseAll()
-        delay(300)
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.press(KEY_LEFT_SHIFT);
+        Keyboard.press(KEY_F2);
+        delay(100);
+        Keyboard.releaseAll();
+        delay(300);
         }
 //switch 3 that starts stream
     if (digitalRead(psh3) == LOW) {
-        Keyboard.press(KEY_LEFT_CTRL)
-        Keyboard.press(KEY_LEFT_SHIFT)
-        Keyboard.press(KEY_F3)
-        delay(100)
-        Keyboard.releaseAll()
-        delay(300)
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.press(KEY_LEFT_SHIFT);
+        Keyboard.press(KEY_F3);
+        delay(100);
+        Keyboard.releaseAll();
+        delay(300);
     }
 //switch 4 that stops stream
     if (digitalRead(psh4) == LOW) {
-        Keyboard.press(KEY_LEFT_CTRL)
-        Keyboard.press(KEY_LEFT_SHIFT)
-        Keyboard.press(KEY_F4)
-        delay(100)
-        Keyboard.releaseAll()
-        delay(300)    
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.press(KEY_LEFT_SHIFT);
+        Keyboard.press(KEY_F4);
+        delay(100);
+        Keyboard.releaseAll();
+        delay(300);   
     }
 //switch 5 that changes the scene
     if (digitalRead(psh5) == LOW) {
-        Keyboard.press(KEY_LEFT_CTRL)
-        Keyboard.press(KEY_LEFT_SHIFT)
-        Keyboard.press(KEY_F5)
-        delay(100)
-        Keyboard.releaseAll()
-        delay(300)
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.press(KEY_LEFT_SHIFT);
+        Keyboard.press(KEY_F5);
+        delay(100);
+        Keyboard.releaseAll();
+        delay(300);
     }
 
 //now the encoders
 //encoder for the microphone
+long afposmic = encmic.read();
+    if (afposmic != befposmic) {
+        if (afposmic > befposmic) {
+            if (volmic < 127) volmic++; 
+        } else {
+            if (volmic > 0) volmic--;
+        }
+        MIDI.sendControlChange(10, volmic, 1);
+        befposmic = afposmic;
+    }
 
-
-
+//encoder for the computer
+long afposcomp = enccomp.read();   
+    if (afposcomp != befposcomp) {
+        if (afposcomp > befposcomp) {
+            if (volcomp < 127) volcomp++;
+        } else {
+            if (volcomp > 0) volcomp--;
+        }
+        MIDI.sendControlChange(11, volcomp, 1);
+        befposcomp = afposcomp;
+        }
+    }
 }
