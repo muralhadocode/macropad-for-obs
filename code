@@ -1,0 +1,79 @@
+#include <Arduino.h>
+#include <Keyboard.h>
+#include <Encoder.h>
+
+int psh1 = 4
+int psh2 = 5
+int psh3 = 6
+int psh4 = 7
+int psh5 = 8
+
+long befposmic = 0
+long befposcomp = 0
+void setup() {
+    Serial.begin(9600);
+    Keyboard.begin();
+
+    pinMode(psh1, INPUT_PULLUP);
+    pinMode(psh2, INPUT_PULLUP);
+    pinMode(psh3, INPUT_PULLUP);
+    pinMode(psh4, INPUT_PULLUP);
+    pinMode(psh5, INPUT_PULLUP);
+
+}
+
+void loop() {
+    
+//only the switches
+//switch 1 that starts recording    
+    if (digitalRead(psh1) == LOW) {
+        Keyboard.press(KEY_LEFT_CTRL)
+        Keyboard.press(KEY_LEFT_SHIFT)
+        Keyboard.press(KEY_F1)
+        delay(100)
+        Keyboard.releaseAll()
+        delay(300)
+    }
+//switch 2 that stops recording
+    if (digitalRead(psh2) == LOW) {
+        Keyboard.press(KEY_LEFT_CTRL)
+        Keyboard.press(KEY_LEFT_SHIFT)
+        Keyboard.press(KEY_F2)
+        delay(100)
+        Keyboard.releaseAll()
+        delay(300)
+    }
+//switch 3 that starts stream
+    if (digitalRead(psh3) == LOW) {
+        Keyboard.press(KEY_LEFT_CTRL)
+        Keyboard.press(KEY_LEFT_SHIFT)
+        Keyboard.press(KEY_F3)
+        delay(100)
+        Keyboard.releaseAll()
+        delay(300)
+    }
+//switch 4 that stops stream
+    if (digitalRead(psh4) == LOW) {
+        Keyboard.press(KEY_LEFT_CTRL)
+        Keyboard.press(KEY_LEFT_SHIFT)
+        Keyboard.press(KEY_F4)
+        delay(100)
+        Keyboard.releaseAll()
+        delay(300)    
+    }
+//switch 5 that changes the scene
+    if (digitalRead(psh5) == LOW) {
+        Keyboard.press(KEY_LEFT_CTRL)
+        Keyboard.press(KEY_LEFT_SHIFT)
+        Keyboard.press(KEY_F5)
+        delay(100)
+        Keyboard.releaseAll()
+        delay(300)
+    }
+
+//now the encoders
+//encoder for the microphone
+
+
+
+}
