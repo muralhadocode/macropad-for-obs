@@ -8,9 +8,9 @@ The project consists of a custom PCB designed in KiCad, featuring 5 buttons (1 f
 The Firmware consist in making key shortcuts for the start and stop stream and recording, and for the change scene, since obs has no shortcut for changing the volume you need to download the ([obs midi plugin](https://github.com/nhielost/obs-midi-mg/)) so the encoders work, then you need to set it up:D.
 
 ## Pictures
-<img width="487" height="583" alt="Captura de tela 2026-06-06 173129" src="https://github.com/user-attachments/assets/72cee8b5-140d-4c9e-84a1-e9cd907a23de" />
+<img width="692" height="835" alt="Captura de tela 2026-06-22 201640" src="https://github.com/user-attachments/assets/f106df55-ac66-4474-a546-1dd8aa367690" />
 <img width="1413" height="824" alt="Captura de tela 2026-06-07 003344" src="https://github.com/user-attachments/assets/925c23b1-c8b4-49ff-b0a2-ccd8fbe04b6f" />
 <img width="1440" height="695" alt="Captura de tela 2026-06-07 151733" src="https://github.com/user-attachments/assets/b22aeecd-0523-45dc-b8d3-2035b52250ab" />
 <img width="550" height="543" alt="Captura de tela 2026-06-06 181357" src="https://github.com/user-attachments/assets/301ba3e7-451c-4740-a430-a276430c0006" />
-<img width="485" height="592" alt="Captura de tela 2026-06-07 175813" src="https://github.com/user-attachments/assets/ab80ce33-9133-461b-911d-ee7fcaf523fe" />
-<img width="490" height="590" alt="Captura de tela 2026-06-07 175823" src="https://github.com/user-attachments/assets/a489a653-b40c-4d4a-a61d-cadea2b3b1d3" />
+<img width="500" height="563" alt="Captura de tela 2026-06-22 201656" src="https://github.com/user-attachments/assets/a6e405f4-6520-4afa-8494-7cb9b4bc38ac" />
+<img width="498" height="598" alt="Captura de tela 2026-06-22 201706" src="https://github.com/user-attachments/assets/35023a14-2131-4335-b623-2798b0835f7c" />
