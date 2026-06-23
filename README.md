@@ -8,6 +8,7 @@ The project consists of a custom PCB designed in KiCad, featuring 5 buttons (1 f
 The Firmware consist in making key shortcuts for the start and stop stream and recording, and for the change scene, since obs has no shortcut for changing the volume you need to download the ([obs midi plugin](https://github.com/nhielost/obs-midi-mg/)) so the encoders work, then you need to set it up:D.
 
 ## Pictures
+<img width="1302" height="785" alt="Captura de tela 2026-06-22 205416" src="https://github.com/user-attachments/assets/402b0e41-b838-4089-89b8-0f6eef75d97a" />
 <img width="692" height="835" alt="Captura de tela 2026-06-22 201640" src="https://github.com/user-attachments/assets/f106df55-ac66-4474-a546-1dd8aa367690" />
 <img width="1413" height="824" alt="Captura de tela 2026-06-07 003344" src="https://github.com/user-attachments/assets/925c23b1-c8b4-49ff-b0a2-ccd8fbe04b6f" />
 <img width="1440" height="695" alt="Captura de tela 2026-06-07 151733" src="https://github.com/user-attachments/assets/b22aeecd-0523-45dc-b8d3-2035b52250ab" />
