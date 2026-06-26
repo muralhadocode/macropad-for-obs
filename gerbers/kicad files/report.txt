@@ -1,0 +1,72 @@
+Informação: Processando o símbolo 'SW1:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Informação: Processando o símbolo 'SW2:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Informação: Processando o símbolo 'SW3:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Informação: Processando o símbolo 'U1:footprints:XIAO-Generic-Hybrid-14P-2.54-21X17.8MM'.
+O designador de referência REF** foi trocado para SW1.
+O valor SW1 foi trocado de SW_Cherry_MX_1.00u_PCB para SW_Push.
+A associação do símbolo SW1 foi atualizada de  para /0e69e959-60d8-4571-b2d4-889fd6aab52e.
+SW1 campos foram atualizados.
+O nome da folha SW1 foi atualizada para '/'.
+O arquivo da folha SW1 foi atualizado para 'hackclubv.1.kicad_sch'.
+Adiciona rede Net-(U1-PA6_A10_D10_MOSI).
+SW1 conectado pino 1 para Net-(U1-PA6_A10_D10_MOSI).
+Adiciona rede GND.
+SW1 conectado pino 2 para GND.
+Metadados da unidade SW1 atualizados.
+SW2 foi adicionado (footprint 'Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB').
+O designador de referência REF** foi trocado para SW2.
+O valor SW2 foi trocado de SW_Cherry_MX_1.00u_PCB para SW_Push.
+A associação do símbolo SW2 foi atualizada de  para /a665a4ea-2b88-488c-90fd-94a4d39cfe52.
+SW2 campos foram atualizados.
+O nome da folha SW2 foi atualizada para '/'.
+O arquivo da folha SW2 foi atualizado para 'hackclubv.1.kicad_sch'.
+SW2 conectado pino 2 para GND.
+Adiciona rede Net-(U1-PA5_A9_D9_MISO).
+SW2 conectado pino 1 para Net-(U1-PA5_A9_D9_MISO).
+Metadados da unidade SW2 atualizados.
+SW3 foi adicionado (footprint 'Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB').
+O designador de referência REF** foi trocado para SW3.
+O valor SW3 foi trocado de SW_Cherry_MX_1.00u_PCB para SW_Push.
+A associação do símbolo SW3 foi atualizada de  para /317e893a-513a-4462-913a-f9bcc8c71be2.
+SW3 campos foram atualizados.
+O nome da folha SW3 foi atualizada para '/'.
+O arquivo da folha SW3 foi atualizado para 'hackclubv.1.kicad_sch'.
+Adiciona rede Net-(U1-PA7_A8_D8_SCK).
+SW3 conectado pino 1 para Net-(U1-PA7_A8_D8_SCK).
+SW3 conectado pino 2 para GND.
+Metadados da unidade SW3 atualizados.
+SW1 foi adicionado (footprint 'Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB').
+U1 foi adicionado (footprint 'footprints:XIAO-Generic-Hybrid-14P-2.54-21X17.8MM').
+O designador de referência >NAME foi trocado para U1.
+O valor U1 foi trocado de &gt;VALUE para MOUDLE-SEEEDUINO-XIAO.
+A associação do símbolo U1 foi atualizada de  para /3fcb080e-b4d1-4d05-b1f3-365e87b82f77.
+O nome da folha U1 foi atualizada para '/'.
+O arquivo da folha U1 foi atualizado para 'hackclubv.1.kicad_sch'.
+Adiciona rede unconnected-(U1-PA10_A2_D2-Pad3).
+U1 conectado pino 3 para unconnected-(U1-PA10_A2_D2-Pad3).
+Adiciona rede unconnected-(U1-PB09_A7_D7_RX-Pad8).
+U1 conectado pino 8 para unconnected-(U1-PB09_A7_D7_RX-Pad8).
+U1 conectado pino 13 para GND.
+Adiciona rede unconnected-(U1-5V-Pad14).
+U1 conectado pino 14 para unconnected-(U1-5V-Pad14).
+Adiciona rede unconnected-(U1-PB08_A6_D6_TX-Pad7).
+U1 conectado pino 7 para unconnected-(U1-PB08_A6_D6_TX-Pad7).
+U1 conectado pino 10 para Net-(U1-PA5_A9_D9_MISO).
+Adiciona rede unconnected-(U1-3V3-Pad12).
+U1 conectado pino 12 para unconnected-(U1-3V3-Pad12).
+Adiciona rede unconnected-(U1-PA8_A4_D4_SDA-Pad5).
+U1 conectado pino 5 para unconnected-(U1-PA8_A4_D4_SDA-Pad5).
+Adiciona rede unconnected-(U1-PA11_A3_D3-Pad4).
+U1 conectado pino 4 para unconnected-(U1-PA11_A3_D3-Pad4).
+U1 conectado pino 9 para Net-(U1-PA7_A8_D8_SCK).
+U1 conectado pino 11 para Net-(U1-PA6_A10_D10_MOSI).
+Adiciona rede unconnected-(U1-PA9_A5_D5_SCL-Pad6).
+U1 conectado pino 6 para unconnected-(U1-PA9_A5_D5_SCL-Pad6).
+Adiciona rede unconnected-(U1-PA02_A0_D0-Pad1).
+U1 conectado pino 1 para unconnected-(U1-PA02_A0_D0-Pad1).
+Adiciona rede unconnected-(U1-PA4_A1_D1-Pad2).
+U1 conectado pino 2 para unconnected-(U1-PA4_A1_D1-Pad2).
+Metadados da unidade U1 atualizados.
+
+
+Informação: Total de avisos: 0, erros: 0.
