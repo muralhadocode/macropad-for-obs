@@ -1,2 +1,2 @@
 # 3D files
-This folder contains the 3D models (.STL, .STD, .F3D or .STEP) for the macropad case.
+This folder contains the 3D models (.STL, .F3D or .STEP) for the macropad case.
